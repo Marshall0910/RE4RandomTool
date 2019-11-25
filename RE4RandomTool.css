@@ -1,0 +1,28 @@
+body {
+    width: 275px;
+    background-color: #333333;
+    color: lightgray;
+
+}
+
+h2 {
+    color: rgb(153, 238, 234);
+}
+
+#Random {
+    background-color: lightskyblue;
+    border: none;
+    padding: 5px 10px;
+
+}
+
+#Dead {
+    background-color: rgb(223, 69, 69);
+    border: none;
+    padding: 5px 10px;
+}
+
+#select {
+    color: lightgreen;
+}
+
