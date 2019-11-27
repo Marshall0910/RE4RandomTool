@@ -97,7 +97,7 @@ Button.onclick = () => {
 
         anchor.setAttribute('href', hrefValue);
         anchor.className = 'twitter-hashtag-button';
-        anchor.setAttribute('data-text', `バイオ4チャプター毎ランダム縛りクリアしました！ #バイオ4チャプター毎ランダム縛りツール https://marshall0910.github.io/RE4RandomTool/RE4RandomTool.html`);
+        anchor.setAttribute('data-text', `バイオ4チャプター毎ランダム縛りクリアしました！ #バイオ4チャプター毎ランダム縛りツール https://marshall0910.github.io/RE4RandomTool`);
         anchor.innerText = 'Tweet #バイオ4チャプター毎ランダム縛りツール'
 
         tweet.appendChild(anchor);
@@ -129,12 +129,12 @@ Button.onclick = () => {
 
     const anchor = document.createElement('a');
     const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
-        + encodeURIComponent('https://marshall0910.github.io/RE4RandomTool/RE4RandomTool.html'); +
+        + encodeURIComponent('https://marshall0910.github.io/RE4RandomTool'); +
             '&ref_src=twsrc%5Etfw';
 
     anchor.setAttribute('href', hrefValue);
     anchor.className = 'twitter-hashtag-button';
-    anchor.setAttribute('data-text', `今日はChapter${Chapter[count]}で終わりました。#バイオ4チャプター毎ランダム縛りツール https://marshall0910.github.io/RE4RandomTool/RE4RandomTool.html`);
+    anchor.setAttribute('data-text', `今日はChapter${Chapter[count]}で終わりました。#バイオ4チャプター毎ランダム縛りツール https://marshall0910.github.io/RE4RandomTool`);
     anchor.innerText = 'Tweet #バイオ4チャプター毎ランダム縛りツール'
 
     tweet.appendChild(anchor);
