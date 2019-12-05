@@ -75,7 +75,7 @@ Button.onclick = () => {
         console.log(shibari);
     }
 
-    if (count === 13) {
+    if (count === 13 || count === 0) {
         shibari.pop();
         console.log(shibari);
     }
@@ -97,7 +97,7 @@ Button.onclick = () => {
 
         anchor.setAttribute('href', hrefValue);
         anchor.className = 'twitter-hashtag-button';
-        anchor.setAttribute('data-text', `バイオ4チャプター毎ランダム縛りクリアしました！ #バイオ4チャプター毎ランダム縛りツール https://marshall0910.github.io/RE4RandomTool`);
+        anchor.setAttribute('data-text', `バイオ4チャプター毎ランダム縛りクリアしました！ #バイオ4チャプター毎ランダム縛りツール https://marshall0910.github.io/RE4RandomTool/RE4RandomTool.html`);
         anchor.innerText = 'Tweet #バイオ4チャプター毎ランダム縛りツール'
 
         tweet.appendChild(anchor);
@@ -129,12 +129,12 @@ Button.onclick = () => {
 
     const anchor = document.createElement('a');
     const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag='
-        + encodeURIComponent('https://marshall0910.github.io/RE4RandomTool'); +
+        + encodeURIComponent('https://marshall0910.github.io/RE4RandomTool/RE4RandomTool.html'); +
             '&ref_src=twsrc%5Etfw';
 
     anchor.setAttribute('href', hrefValue);
     anchor.className = 'twitter-hashtag-button';
-    anchor.setAttribute('data-text', `今日はChapter${Chapter[count]}で終わりました。#バイオ4チャプター毎ランダム縛りツール https://marshall0910.github.io/RE4RandomTool`);
+    anchor.setAttribute('data-text', `今日はChapter${Chapter[count]}で終わりました。#バイオ4チャプター毎ランダム縛りツール https://marshall0910.github.io/RE4RandomTool/RE4RandomTool.html`);
     anchor.innerText = 'Tweet #バイオ4チャプター毎ランダム縛りツール'
 
     tweet.appendChild(anchor);
@@ -152,7 +152,7 @@ Button.onclick = () => {
         console.log(shibari);
     }
 
-    if (count === 13) {
+    if (count === 13 ||count === 0) {
         shibari.push('最大撃退数');
         console.log(shibari);
 
@@ -172,4 +172,5 @@ Dead.onclick = () => {
         location.reload();
     }
 };
+
 
