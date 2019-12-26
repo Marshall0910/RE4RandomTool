@@ -16,7 +16,7 @@ const shibari = [
     'ノーダメージ',
     '命中率100%',
     'リロード禁止',
-    '最大撃退数',
+    '最小撃退数',
 
 ];
 
@@ -75,10 +75,7 @@ Button.onclick = () => {
         console.log(shibari);
     }
 
-    if (count === 13 || count === 0) {
-        shibari.pop();
-        console.log(shibari);
-    }
+  
 
     //子要素削除
     del(divarea);
@@ -152,11 +149,6 @@ Button.onclick = () => {
         console.log(shibari);
     }
 
-    if (count === 13 ||count === 0) {
-        shibari.push('最大撃退数');
-        console.log(shibari);
-
-    }
 
     //カウント変数インクリメント
     count++;
